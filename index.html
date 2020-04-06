@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+
+    
+    <!--  Leaflet map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+
+    <!-- Wheather icons-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="js/main.js" defer></script> 
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css"
+     integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+  
+
+     <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    
+        <header>
+            <div class="pure-menu pure-menu-horizontal">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-disabled">COVID 19</li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="pure-g">
+                <div class="pure-u-1-2" id="mapid">
+                </div>
+       
+                <div class="pure-u-1-2" id="container-right">
+
+                    <h2 id="location-name"></h2>
+
+
+                        <table class="pure-table">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="weather-description"></td>
+                                    <td> 
+                                        <img class="pure-img" id="weather-icon"> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Temperature</td>
+                                    <td  id="current-temperature"></td>
+                                </tr>
+                                <tr>
+                                    <td>Wind Speed</td>
+                                    <td  id="current-wind-speed"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    <div class="covid-container">
+                        <h2 id="covid-header">Covid-19</h2>
+
+                        <div class="info">
+                            <span id="corona-location">Netherlands</span>
+                            <span id="date-label">Date:</span>
+                            <span id="corona-date">05/03/2020</span>    
+                            <span id="cases-label">Cases:</span>
+                            <span  id="corona-cases">14000</span>
+                        </div>
+                    </div>
+
+                
+
+                </div>      
+            </div>
+        </main>
+        
+
+        <footer></footer>
+
+</body>
+</html>
