@@ -21,7 +21,7 @@ body{
     border-left: none;
 }
 #location-name{
-    margin-top: 10vh;
+    margin-top: 2vh;
     font-size: 30px;
     color: rgb(77, 77, 77);
     padding: 10px;
@@ -29,11 +29,11 @@ body{
     border-bottom: 1px solid rgb(219, 219, 219);
 }
 #covid-header{
-    
     background-color: rgba(214, 92, 76, 0.952);
     border-radius: 50px;
     width: 200px;
     margin-left: auto;
+    margin-top: 5vh;
     margin-right: auto;
     color:white;
     font-weight: normal;
@@ -43,8 +43,8 @@ body{
 }
 #container-right{
     padding: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
